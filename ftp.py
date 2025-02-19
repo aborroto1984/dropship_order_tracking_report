@@ -29,11 +29,6 @@ class FTPManager:
                         f"dropshipper/{ftp_folder_name}/tracking",
                     ]
 
-                    # ftp_directories = [
-                    #     f"test_dropshipper_logs/tracking_logs/{ftp_folder_name}",
-                    #     f"test_dropshipper/{ftp_folder_name}/tracking",
-                    # ]
-
                     for ftp_directory in ftp_directories:
                         # Reset to the root directory
                         self.ftp.cwd("/")
