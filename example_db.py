@@ -27,7 +27,6 @@ class ExampleDb:
                     d.code
                 FROM PurchaseOrders po
                 JOIN Dropshippers d ON po.dropshipper_id = d.id
-                JOIN ShipstationOrderIds s on po.id = s.purchase_order_id
                 WHERE po.is_cancelled = 0 AND po.in_sellercloud = 1 AND po.tracking_number IS NULL AND d.code = 'ABS'
                 """
             )
